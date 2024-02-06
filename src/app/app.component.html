@@ -1,0 +1,125 @@
+<!-- <ul *ngFor="let task of userdetails">
+<app-login [item]="task"></app-login>
+</ul>
+<input type="text" placeholder="text" [(ngModel)]="name">
+
+<h1>{{name | uppercase}}</h1>
+<app-todolist></app-todolist> -->
+
+<!-- <button (click)="onclick(box1.value,box2.value)">click me</button><br><br>
+<div>
+<input type="text" #box1 placeholder="Firstname">
+<input type="text" #box2 placeholder="lastname"> 
+<h1 (mouseover)="onmouse('mouse over')">just mouse over</h1>
+<h1 (mouseleave)="onmouse('mouse leave ')">just mouse over</h1>
+<div> 
+<input #box type="text"  placeholder="keyup" name="keyup">
+<h1 (mouseover)="getdata(box.value)">{{display}}</h1>
+<button (click)="getdata(box.value)">click me</button>
+
+ <h1>Counter:{{count}}</h1>
+<button (click)="counter('add')">++</button><br>
+<button (click)="counter('minus')">--</button> -->
+
+<!-- <button (click)="cou('add')">++</button>
+<button (click)="cou('minus')">--</button>
+<h1>counter:{{count}}</h1> -->
+
+<!-- <h1 *ngIf="show then ifblock">code is running fast</h1>
+<ng-template #ifblock>
+    <button> click me</button>
+</ng-template>
+<ng-template #else block>
+    your code is wrong
+</ng-template> -->
+
+<!-- <ng-template [ngIf]="color==='red' ">
+    <h1 style="color:red" *ngIf="color else elseblock">This is about me </h1>
+</ng-template>
+<ng-template #elseblock>
+    <h1 style="color:green">This is about me </h1>
+</ng-template> -->
+<!-- <input  #box type="text" placeholder="input own color">
+<button (click)="ongetcolor(box.value)">click</button>
+<h1 [style.color]="color">heelo akshay</h1>
+<div  [ngSwitch]="color">
+
+    <h1 *ngSwitchCase="'red'" style="color: red;">red color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: blue;">blue color</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">green color</h1>
+    <h1 *ngSwitchDefault>unknown color</h1>
+</div> -->
+
+<!-- <ul *ngFor="let data of userdetail">
+    <li>{{data.name}}</li>
+    <li>{{data.email}}</li> 
+    <li>{{data.phone}}</li> 
+    <ul *ngFor="let account of data.account">
+        <li>{{account}}</li>
+    </ul>
+</ul> -->
+
+<!-- <h1 [style.color]="color">hello akshay</h1>
+<input #box1 type="text" placeholder="own color">
+<button (click)="onget(box1.value)">click</button> -->
+
+<!-- <div class="container" >
+<button (click)="ontoggle()">toggle</button>
+<div *ngIf="display">
+<form #BasicForm="ngForm" (ngSubmit)="getData(BasicForm.value)" >
+    <input type="text" ngModel placeholder="username" name="name">
+    <br>
+    <input type="text" ngModel placeholder="middlename" name="middlename">
+    <br> 
+    <input type="text" ngModel placeholder="Lastname" name="Lastname">
+    <br><br>
+    <button >register</button>
+
+
+</form>
+</div> -->
+<!-- </div> -->
+<!-- <button (click)="onclickrendom()">click here for rendom number</button> -->
+
+<!-- <input type="text" #box3 name="enter name" placeholder="name">
+<button (click)="onclick(box3)">click me</button>
+
+<p>{{name | lowercase}}</p> -->
+
+<!-- templete form -->
+
+<!-- <div class="container">
+<form #loginform="ngForm" (ngSubmit)="onlogin(loginform.value)">
+    <input type="text" #name="ngModel" pattern="[a-z]+$" ngModel placeholder="enter username" name="username" required>
+    <br>
+    <span *ngIf="name.invalid" style="color: red;">enter valid username</span>
+    <br>
+    <input type="password" ngModel placeholder="enter password" name="password"><br><br>
+    <div class="container">
+        <button class="botton">login</button>
+    </div>
+</form>
+</div> -->
+
+
+<!-- relative form -->
+<!-- <div class="container">
+<form [formGroup]="loginform"  (ngSubmit)="loginuser()">
+ <input type="text" placeholder="enter name" name="user" formControlName="user">
+ <br>
+ <input type="password" placeholder="enter password" name="password" formControlName="password">
+ <br>
+ <button class="button">login</button>
+</form>
+</div>   -->
+
+<!-- router task  -->
+
+<h1>Router</h1>
+<a routerLink="">home</a>
+<br>
+<a routerLink="about">about</a>
+<br>
+<a routerLink="user">user</a>
+
+<router-outlet></router-outlet>

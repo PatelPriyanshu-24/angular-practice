@@ -1,0 +1,21 @@
+nav{
+    background-color: black;
+}
+h1{
+    color: antiquewhite;
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+input{
+    border-color: black;
+    border-radius: 10px;
+}
+button{
+    border-color: black;
+    margin-left: 20px;
+    background-color: azure;
+    color: black;
+    text-decoration: dashed;
+}
